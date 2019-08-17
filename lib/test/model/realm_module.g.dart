@@ -1,5 +1,5 @@
 //@RealmModule
-part of 'realmmodule.dart';
+part of 'realm_module.dart';
 
 class RealmModuleGenerated extends RealmModule {
   static final RealmConfiguration _singleton =

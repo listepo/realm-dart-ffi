@@ -1,11 +1,11 @@
 import 'dart:io';
 
 import 'package:realm/src/dart/realm.dart';
-import 'package:realm/src/dart/realmresults.dart';
+import 'package:realm/src/dart/realm_results.dart';
 import 'package:realm/test/constants.dart';
 import 'package:realm/test/model/dog.dart';
-import 'package:realm/test/model/realmmodule.dart';
-import "package:test/test.dart";
+import 'package:realm/test/model/realm_module.dart';
+import 'package:test/test.dart';
 
 void main() {
   group("Realm", () {

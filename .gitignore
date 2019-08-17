@@ -140,3 +140,6 @@ doc/api/
 
 # Ignore Mac DS_Store files
 .DS_Store
+
+# Ignore realm test data
+lib/test/realms/

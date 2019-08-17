@@ -16,7 +16,7 @@ part 'realm_module.g.dart';
 class RealmModule extends RealmConfiguration {
   @override
   String path() {
-    return realm_test_directory + "test.realm";
+    return realmTestDirectory + "test.realm";
   }
 
   @override

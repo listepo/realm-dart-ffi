@@ -11,13 +11,13 @@ void main() {
   group("Realm", () {
     Realm realm;
     setUp(() async {
-      final test_dir = Directory(realm_test_directory);
+      final testDir = Directory(realmTestDirectory);
 
-      if (test_dir.existsSync()) {
-        test_dir.deleteSync(recursive: true);
+      if (testDir.existsSync()) {
+        testDir.deleteSync(recursive: true);
       }
 
-      test_dir.createSync();
+      testDir.createSync();
       return realm = await Realm()
         ..realmConfiguration = RealmModuleGenerated()
         ..open();

@@ -3,13 +3,13 @@ part of 'realmmodule.dart';
 
 class RealmModuleGenerated extends RealmModule {
   static final RealmConfiguration _singleton =
-      new RealmModuleGenerated._internal();
+      RealmModuleGenerated._internal();
 
   factory RealmModuleGenerated() {
     return _singleton;
   }
 
-  RealmModuleGenerated._internal() {}
+  RealmModuleGenerated._internal();
 
   @override
   T newProxyInstance<T extends RealmModel>(Type type) {

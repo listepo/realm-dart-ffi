@@ -32,7 +32,7 @@ import 'dart:ffi';
     tableNameC.free();
 
     // T proxyInstance = realmConfiguration.newProxyInstance<T>(T); TODO use this 
-    Dog$Realm dog = new Dog$Realm();
+    Dog$Realm dog = Dog$Realm();
     dog.objectPointer = realmObjectPointer;
     dog.realm = realm;
     return dog as T;
@@ -44,7 +44,7 @@ import 'dart:ffi';
   }
 
   @override
-  void set length(int newLength) {
+  set length(int newLength) {
     throw Exception("Modifying a RealmResults is not supported");
   }
 }

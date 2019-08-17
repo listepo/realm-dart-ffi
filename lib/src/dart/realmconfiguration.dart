@@ -14,7 +14,7 @@ abstract class RealmConfiguration {
   List<RealmModel> schema();
   
   String getSchemaAsJSON() {
-    var jsonSchema = new StringBuffer();
+    var jsonSchema = StringBuffer();
     jsonSchema.write("[\n");
     for (var s in schema()) {
       RealmModel model = newProxyInstance(s.runtimeType);
